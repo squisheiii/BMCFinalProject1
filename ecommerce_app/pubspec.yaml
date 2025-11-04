@@ -37,6 +37,8 @@ dependencies:
   firebase_core: ^4.2.0
   flutter_native_splash: 2.4.0
   firebase_auth: ^6.1.1
+  cloud_firestore: ^6.0.3
+  provider: ^6.1.5+1
 
 dev_dependencies:
   flutter_test:
@@ -59,24 +61,28 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Add this block to register your assets folder
   assets:
-    - assets/images/splash_logo.jpg
-# 1. Add this new section at the end of the file
+    - assets/images/splash_logo.png
+
+# Add this new section at the end of the file
 flutter_native_splash:
 
-  # 2. Set the background color of your splash screen
-  color: "#FFFFFF" # This is white
+  # Set the background color of your splash screen
+  color: "FFFFFF" # This is white
 
-  # 3. Point to your splash logo file
-  image: assets/images/splash_logo.jpg
+  # Point to your splash logo file
+  image: assets/images/splash_logo.png
 
-  # 4. Configuration for the Android splash screen
+  # Configuration for the Android splash screen
   android_12:
     color: "#FFFFFF"
-    image: assets/images/splash_logo.jpg
-  # 5. Configuration for the web splash screen
+    image: assets/images/splash_logo.png
 
-  # Web: only supports `true` (boolean), no image/color override
+  #  Configure for the web splash screen
+
+  # Web: only supports 'true' (boolean), no image/color override
 
   web: true
 
